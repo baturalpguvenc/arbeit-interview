@@ -23,16 +23,16 @@ const questions = [
 
 const interviewers = [
   {
-    id: "John",
-    name: "John",
+    id: "Ferit Yiğit Balaban",
+    name: "Fbyx",
     description: "Software Engineering",
     level: "L3",
   },
   {
-    id: "Richard",
-    name: "Richard",
+    id: "Baturalp Güvenç",
+    name: "Ebu Dante",
     description: "Product Management",
-    level: "L5",
+    level: "L3",
   },
   {
     id: "Sarah",
@@ -195,9 +195,9 @@ export default function DemoPage() {
       const question =
         selected.name === "Behavioral"
           ? `Tell me about yourself. Why don${`’`}t you walk me through your resume?`
-          : selectedInterviewer.name === "John"
+          : selectedInterviewer.name === "Ferit"
           ? "What is a Hash Table, and what is the average case and worst case time for each of its operations?"
-          : selectedInterviewer.name === "Richard"
+          : selectedInterviewer.name === "Baturalp"
           ? "Uber is looking to expand its product line. Talk me through how you would approach this problem."
           : "You have a 3-gallon jug and 5-gallon jug, how do you measure out exactly 4 gallons?";
 
@@ -306,35 +306,8 @@ export default function DemoPage() {
       {step === 3 ? (
         <div className="w-full min-h-screen flex flex-col px-4 pt-2 pb-8 md:px-8 md:py-2 bg-[#FCFCFC] relative overflow-x-hidden">
           <p className="absolute w-full top-0 h-[60px] flex flex-row justify-between -ml-4 md:-ml-8">
-            <span className="text-sm text-[#1a2b3b] font-medium">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium opacity-20">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden sm:block">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium hidden sm:block">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden xl:block">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden sm:block">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden sm:block">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium hidden sm:block">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden xl:block">
-              demo interview
+            <span className="text-sm text-[#63b480] font-medium">
+              Arbeit Studio
             </span>
           </p>
           {completed ? (
@@ -385,12 +358,11 @@ export default function DemoPage() {
                     />
                   </svg>
                   <p className="text-[14px] font-normal leading-[20px] text-[#1a2b3b]">
-                    Video is not stored on our servers, and will go away as soon
-                    as you leave the page.
+                    Görüntüleriniz kayıt altına alınmaktadır.
                   </p>
                 </div>
                 <Link
-                  href="https://github.com/Tameyer41/liftoff"
+                  href="https://github.com/baturalpguvenc/arbeit-interview"
                   target="_blank"
                   className="group rounded-full pl-[8px] min-w-[180px] pr-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#1E2B3A] text-white hover:[linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #0D2247] no-underline flex gap-x-2  active:scale-95 scale-100 duration-75"
                   style={{
@@ -398,7 +370,7 @@ export default function DemoPage() {
                       "0px 1px 4px rgba(13, 34, 71, 0.17), inset 0px 0px 0px 1px #061530, inset 0px 0px 0px 2px rgba(255, 255, 255, 0.1)",
                   }}
                 >
-                  <span className="w-5 h-5 rounded-full bg-[#407BBF] flex items-center justify-center">
+                  <span className="w-5 h-5 rounded-full bg-[#6ddc7f] flex items-center justify-center">
                     <svg
                       className="w-[16px] h-[16px] text-white"
                       fill="none"
@@ -462,9 +434,9 @@ export default function DemoPage() {
                   <h2 className="text-2xl font-semibold text-left text-[#1D2B3A] mb-2">
                     {selected.name === "Behavioral"
                       ? `Tell me about yourself. Why don${`’`}t you walk me through your resume?`
-                      : selectedInterviewer.name === "John"
+                      : selectedInterviewer.name === "Ferit"
                       ? "What is a Hash Table, and what is the average case and worst case time for each of its operations?"
-                      : selectedInterviewer.name === "Richard"
+                      : selectedInterviewer.name === "Baturalp"
                       ? "Uber is looking to expand its product line. Talk me through how you would approach this problem."
                       : "You have a 3-gallon jug and 5-gallon jug, how do you measure out exactly 4 gallons?"}
                   </h2>
@@ -524,11 +496,11 @@ export default function DemoPage() {
                             >
                               <source
                                 src={
-                                  selectedInterviewer.name === "John"
+                                  selectedInterviewer.name === "Ferit"
                                     ? selected.name === "Behavioral"
                                       ? "https://liftoff-public.s3.amazonaws.com/DemoInterviewMale.mp4"
                                       : "https://liftoff-public.s3.amazonaws.com/JohnTechnical.mp4"
-                                    : selectedInterviewer.name === "Richard"
+                                    : selectedInterviewer.name === "Baturalp"
                                     ? selected.name === "Behavioral"
                                       ? "https://liftoff-public.s3.amazonaws.com/RichardBehavioral.mp4"
                                       : "https://liftoff-public.s3.amazonaws.com/RichardTechnical.mp4"
@@ -771,7 +743,7 @@ export default function DemoPage() {
                           "0px 1px 4px rgba(13, 34, 71, 0.17), inset 0px 0px 0px 1px #061530, inset 0px 0px 0px 2px rgba(255, 255, 255, 0.1)",
                       }}
                     >
-                      <span className="w-5 h-5 rounded-full bg-[#407BBF] flex items-center justify-center">
+                      <span className="w-5 h-5 rounded-full bg-[#58b77b] flex items-center justify-center">
                         <svg
                           className="w-[16px] h-[16px] text-white"
                           fill="none"
@@ -809,23 +781,8 @@ export default function DemoPage() {
             transition={{ duration: 1.25, ease: [0.23, 1, 0.32, 1] }}
             className="absolute w-full md:w-1/2 top-0 h-[60px] flex flex-row justify-between"
           >
-            <span className="text-sm text-[#1a2b3b] font-medium">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium opacity-20">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden sm:block">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium hidden sm:block">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden xl:block">
-              demo interview
+            <span className=" w-full text-sm text-[#1a2b3b] font-medium">
+              Arbeit Studio AI İnterview for New Developer
             </span>
           </motion.p>
           <div className="w-full min-h-[60vh] md:w-1/2 md:h-screen flex flex-col px-4 pt-2 pb-8 md:px-0 md:py-2 bg-[#FCFCFC] justify-center">
@@ -1390,7 +1347,7 @@ export default function DemoPage() {
                 <ul className="mb-auto list-none">
                   <li className="list-none flex items-center">
                     <p className="text-[12px] font-extrabold text-[#1E293B]">
-                      Liftoff
+                      Arbeit Studio
                     </p>
                   </li>
                   <li className="mt-4 list-none flex items-center rounded-[9px] text-gray-900 py-[2px]">
@@ -1601,7 +1558,7 @@ export default function DemoPage() {
                       R
                     </div>
                     <p className="ml-[4px] mr-[6px] flex-shrink-0">
-                      Richard Monroe
+                      Baturalp Güvenç
                     </p>
                     <div className="ml-auto">
                       <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24">
@@ -1657,9 +1614,9 @@ export default function DemoPage() {
                     >
                       {selected.name === "Behavioral"
                         ? "Tell me about yourself"
-                        : selectedInterviewer.name === "John"
+                        : selectedInterviewer.name === "Ferit"
                         ? "What is a Hash Table, and what is the average case for each of its operations?"
-                        : selectedInterviewer.name === "Richard"
+                        : selectedInterviewer.name === "Baturalp"
                         ? "Uber is looking to expand its product line. How would you go about doing this?"
                         : "You have a 3-gallon jug and 5-gallon jug, how do you measure out exactly 4 gallons?"}
                     </motion.span>
@@ -1689,26 +1646,26 @@ export default function DemoPage() {
                     transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
                     className="mt-[12px] flex bg-gray-100 h-[80%] rounded-lg relative ring-1 ring-gray-900/5 shadow-md"
                   >
-                    {selectedInterviewer.name === "John" ? (
+                    {selectedInterviewer.name === "Ferit" ? (
                       <motion.img
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
-                        key="John"
-                        src="/placeholders/John.webp"
-                        alt="John's Interviewer Profile"
+                        key="Ferit"
+                        src="public/placeholders/Ferit.webp"
+                        alt="Ferit's Interviewer Profile"
                         className="absolute top-6 left-6 w-[30%] aspect-video bg-gray-700 rounded ring-1 ring-gray-900/5 shadow-md object-cover"
                       />
-                    ) : selectedInterviewer.name === "Richard" ? (
+                    ) : selectedInterviewer.name === "Baturalp" ? (
                       <motion.img
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.5, ease: [0.23, 1, 0.32, 1] }}
-                        key="Richard"
-                        src="/placeholders/Richard.webp"
-                        alt="Richard's Interviewer Profile"
+                        key="Baturalp"
+                        src="./public/placeholders/Baturalp.webp"
+                        alt="Baturalp's Interviewer Profile"
                         className="absolute top-6 left-6 w-[30%] aspect-video bg-gray-700 rounded ring-1 ring-gray-900/5 shadow-md object-cover"
                       />
                     ) : selectedInterviewer.name === "Sarah" ? (

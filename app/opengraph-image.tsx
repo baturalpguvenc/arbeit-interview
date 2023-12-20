@@ -28,11 +28,11 @@ export default async function OG() {
       >
         <img
           src={new URL(
-            "../public/apple-touch-icon.png",
+            "public/placeholders/arbeit.png",
             import.meta.url
           ).toString()}
-          alt="Liftoff Logo"
-          tw="w-20 h-20 mb-4 opacity-95"
+          alt="Arbeit Logo"
+          tw="w-full h-full mb-4 opacity-95"
         />
         <h1
           style={{

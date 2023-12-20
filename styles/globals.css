@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 #gradient-canvas {
-  --gradient-color-1: #bde1ff;
-  --gradient-color-2: #6ca0f4;
-  --gradient-color-3: #e2d8ee;
-  --gradient-color-4: #94c8ff;
+  --gradient-color-1: #3b7e3b; /* Koyu yeşil */
+  --gradient-color-2: #3b623b; /* Orta ton yeşil */
+  --gradient-color-3: #089008; /* Açık yeşil */
+  --gradient-color-4: #63b981; /* Siyah */
+  --gradient-color-5: #2F4F4F; /* Yosun yeşili */
 }
+
