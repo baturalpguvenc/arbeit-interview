@@ -1,5 +1,4 @@
 <a href="arbeit-interview.vercel.app">
-  <img alt="Arbeit Studio – AI-Powered Mock Interviews"
   <h1 align="center">Arbeit Interviews</h1>
 </a>
 
